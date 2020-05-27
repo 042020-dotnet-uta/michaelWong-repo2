@@ -1,0 +1,82 @@
+REST API QUIZ
+
+1. What is the standard usage for the HTTP verb PATCH?
+1. Validating Existence
+2. Get Information About a Request
+3. Submit a Command
+4. Apply a Partial Update (Correct)
+
+2. Which of the following is not a required response header?
+1. Date
+2. Content-Type
+3. Content-Encoding
+4. Preference-Applied (Correct)
+
+3. T/F REST API Guidelines specify that CORS must be supported through OAut tokens and user credentials with origin validation.
+False (Correct)
+
+4. What is the form for services to produce dates?
+1. DateLiteral (Correct)
+2. DateTime
+3. Timestamp
+4. Time
+
+5. When implementing significant changes, RESTful web APIs should include:
+1. Backward Compatability
+2. Foward Compatability
+3. Versioning (Correct)
+4. Static APIs
+
+SOAP QUIZ
+
+1. Which of the following in the following structure of a WSDL file is incorrect:
+
+Definition
+TargetNamespace
+DataType
+DataAnnotations
+Messages
+Porttype
+Bindings
+service
+
+1. TargetNamespace
+2. DataAnnotations (Correct)
+3. Porttype
+4. service
+
+2. Which of the following are types of messages of a WSDL?
+
+1. Input (Correct)
+2. Output (Correct)
+3. Informational
+4. Exception
+
+ 
+3. Which part of a SOAP message would contain authentication information?
+
+1. Envelope
+2. Header (Correct)
+3. Body
+4. Fault
+
+4. T/F HTTP is the only application layer protocol for SOAP.
+False (Correct)
+
+5. What is a disadvantage of XML as the standard message format for SOAP?
+1. Closed Source Development
+2. Limited Tools For Small Enterprise/Independent Development
+3. Endianness
+4. Lengthy Syntax
+ 
+SOAP, the Simple Object Access Protocol, is a protocol or a definition of how web services communicate with each other or client applications. Web Services are XML-based Async capable applications hosted online. A standardized communication method allows communication between servers on the web and any client. Simple Object Access Protocol ensures that SOAP messages contain an XML document with a standard structure. Every programming language can understand XML markup language, so XML is used as the underlying medium for data exchange. Since there is no standard specifications on the usage of XML across programming languages, SOAP is designed to be an intermediate markup language that works with XML over HTTP. SOAP defines how web services talk to each other or client applications that invoke them. It is a standard language so various programming languages can communicate between each other without extreme development effort.
+SOAP is a lightweight protocol; it is based on the XML language, which is a lightweight data interchange language. SOAP is designed to be platform independent and operating system independent. The SOAP protocol is designed to work with any programming language-based application. The HTTP protocol is the default protocol used by all web applications, so there is no customization required for web services built on the SOAP protocol.
+The SOAP specification defines the SOAP message. The SOAP message is an XML document with a defined structure that is sent to the web service and client application. There are four main components to the SOAP message structure. These fourth components are the envelope element, the header element, the body element and the fault element.
+The first building block of the SOAP message is the SOAP envelope. It is used to encapsulate all the necessary details of the soap message. The SOAP envelope is used to indicate the start and end of a SOAP message as it is the root element for all other SOAP elements. Likewise, it is mandatory for SOAP messages to have an envelope element. 
+The first child of the envelope element can be an optional header element, that appears before the body element. The header element is used to pass application-related information that is processed by SOAP nodes along the message path. The SOAP header element’s immediate child elements are called header blocks. A header block is an application-defined XML element. They are targeted by child elements in the SOAP body element.
+The SOAP body element and its associated child elements are used to exchange information between the web service and the client application. SOAP defines one child element for the body which is the SOAP fault element. Other elements in the body are defined by the web service that uses the SOAP message.
+Error and status information in the SOAP message are carried by the SOAP fault element. If an error occurs in a web service, a fault message is returned to the client. Elements that are contained within the fault message are faultCode, faultString, faultActor and detail.
+
+While SOAP, the Simple Object Access Protocol, is a protocol, REST is an architectural style. Roy Fielding proposed Representational State Transfer (REST) as an architectural approach to designing web services. It outlines that data and functionality are resourced and accessed using Uniform Resource Identifiers (URIs). Clients and servers exchange representations of resources using a standardized interface and protocol.
+REST APIs are designed around resources, any object data or service that can be accessed by the client. Each resource has a URI and routing is used to direct requests to the correct resource. Representation State Transfer comes from how the state of resources or the representations of resources flor or exchange between a service and clients. REST APIs provide an interface that allows decoupling of client and service applications.
+REST API requests are atomic. The state of an application is not remembered between requests in REST. The only persistent storage is the database. Requests can’t depend on any other request and can only read the results of other requests. There are 6 guiding principles for REST in order to achieve a RESTful interface. There must be a clear loose coupling of Client-Server. Each request must be atomic, or stateless. Responses can be cacheable, reusable by the client. Interfaces have 4 constraints, URI, manipulation of resources through representations, self-descriptive messages. Each component can’t see beyond its own layer. And finally, REST is extensible.
