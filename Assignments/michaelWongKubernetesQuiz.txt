@@ -1,0 +1,48 @@
+https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/
+1. What is the main advantage of Kubernetes?
+    A. You can deploy containerized applications without tying them specially to individual machines.
+    B. As a version control, you can have multiple applications running on different versions.
+    C. Provides security through user authentication and authorization to your applications.
+    D. A robust environment for testing applications.
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/
+2. What monitors instances and replaces them when they go down or are deleted?
+    A. Kubectl
+    B. Kubernetes Node
+    3. Kubernetes Deployment Controller
+    4. Kubernetes Application Manager
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/
+3. What is the relationship between a Node and a Pod?
+    A. The pod contains the application source code that a node runs.
+    B. The pod and node are two types of Kubernetes applications.
+    C. The pod runs on a node.
+    D. The pod contains application information for the node.
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/
+4. When would you not create a service with selector?
+    A. Create a service without the corresponding Endpoints object.
+    B. Allow users to manually map a Service to specific endpoints.
+    C. Create an exposed service.
+    D. Using type: ExternalName.
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/
+5. How is scaling accomplished?
+    A. Increasing the number of services in a Deployment.
+    B. Deleting rarely accessed nodes.
+    C. Create new Kubernetes VMs.
+    D. Changing the number of replicas in a Deployment.
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+6. What is the advantage of rolling updates?
+    A. Deployments update with zero downtime.
+    B. Automatically update nodes with new versions.
+    C. Maintain a buffer of updates to be deployed.
+    D. Update all nodes simultaneously.
+
+PDF Question
+7. Which controller is responsible for maintaining the correct number of pods?
+    A. Node controller
+    B. Replication controller
+    C. Endpoints controller
+    D. Service Account & Token controllers
